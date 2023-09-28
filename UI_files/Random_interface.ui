@@ -189,13 +189,6 @@
        </item>
       </layout>
      </item>
-     <item>
-      <widget class="QPushButton" name="pseudo_random">
-       <property name="text">
-        <string>Generate pseudorand</string>
-       </property>
-      </widget>
-     </item>
     </layout>
    </widget>
   </widget>

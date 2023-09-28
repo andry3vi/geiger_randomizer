@@ -49,7 +49,7 @@ class Acquisition(QtWidgets.QMainWindow):
         self.geiger_clearButton.clicked.connect(self.clear_data)
         self.geiger_save.clicked.connect(self.save_geiger_dist)
         self.geiger_load.clicked.connect(self.load_geiger_dist)
-        self.pseudo_random.clicked.connect(self.gen_pseudo_random)
+        # self.pseudo_random.clicked.connect(self.gen_pseudo_random)
 
         self.delta_pulses = []
         self.current_pulses = []
@@ -216,7 +216,7 @@ class Acquisition(QtWidgets.QMainWindow):
 
     def process(self):
         
-        if len(self.current_pulses)%2:
+        if len(self.current_pulses)>1:
             
             self.delta_pulses = self.current_pulses
             self.current_pulses = []
